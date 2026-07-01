@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyfoSys — Clinic Concierge (BolAi Agent)</title>
+  <meta name="description" content="Premium AI SaaS for modern clinics. Automate appointments, patient engagement, and more with the BolAi Agent.">
+  <!-- Open Graph placeholders -->
+  <meta property="og:title" content="CyfoSys — Clinic Concierge" />
+  <meta property="og:description" content="Premium AI SaaS for modern clinics." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=1.0.6" />
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container flex-center">
+        <a href="#" class="logo">
+          <img src="assets/logo.jpg" alt="CyfoSys logo" />
+        </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#cta" class="btn btn-primary">Book a Demo</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <div class="hero-text-center">
+        <h1 class="hero-title">Voice AI for the Modern Clinic</h1>
+        <p class="hero-subtitle">
+          CyfoSys builds AI agents that automate healthcare communication, appointments, and patient engagement.
+        </p>
+        <div class="hero-cta">
+          <a href="#cta" class="btn btn-primary">Book a Demo</a>
+          <a href="#hero" class="btn btn-outline">Watch Product Demo</a>
+        </div>
+      </div>
+      
+      <!-- Center Transcript Mockup Window -->
+      <div class="hero-visual-center">
+        <div class="terminal-mockup">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">call_transcript — bolai_agent.live</div>
+          </div>
+          <div class="terminal-body">
+            <div class="transcript-row">
+              <span class="speaker patient">patient</span>
+              <span class="dialog">Hi, I need to see a dermatologist this week.</span>
+            </div>
+            <div class="transcript-row">
+              <span class="speaker bolai">bolai</span>
+              <span class="dialog">Dr. Mehta has an opening Thursday at 4:30 PM. Shall I book it?</span>
+            </div>
+            <div class="transcript-row audio-row">
+              <span class="speaker-spacer"></span>
+              <div class="live-waveform">
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+                <span class="wave-pillar"></span>
+              </div>
+            </div>
+            <div class="transcript-row">
+              <span class="speaker patient">patient</span>
+              <span class="dialog">Yes please, and send me a reminder.</span>
+            </div>
+            <div class="transcript-row">
+              <span class="speaker bolai">bolai</span>
+              <span class="dialog">Booked. Reminder set for Wednesday at 6 PM. Anything else?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Powering Clinics Across Bar -->
+  <section class="powering-bar" id="powering-bar">
+    <div class="container flex-between">
+      <span class="powering-label">// powering clinics across</span>
+      <div class="powering-cities">
+        <span>Mumbai</span>
+        <span>Pune</span>
+        <span>Bengaluru</span>
+        <span>Delhi NCR</span>
+        <span>Hyderabad</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container two-col">
+      <!-- Left Column: Welcome & Info -->
+      <div class="about-content">
+        <h3 class="about-kicker">// ABOUT</h3>
+        <h2 class="section-title">Clinic Concierge</h2>
+        <p class="about-description">
+          The BolAi Agent operates as a smart clinical receptionist, instantly managing call flows, triaging symptoms, booking appointments, and following up with patient care pathways automatically.
+        </p>
+        
+        <!-- Capabilities Grid -->
+        <div class="capabilities-grid">
+          <div class="capability-item">
+            <span class="icon">🗓️</span>
+            <div>
+              <h5>24/7 AI Booking</h5>
+              <p>Autonomously schedule and reschedule appointments.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <span class="icon">🤖</span>
+            <div>
+              <h5>AI Receptionist</h5>
+              <p>Triage and answer patient inquiries in real-time.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <span class="icon">📋</span>
+            <div>
+              <h5>Patient Management</h5>
+              <p>Direct integration into CRM and calendar tools.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <span class="icon">🔔</span>
+            <div>
+              <h5>Automated Follow-ups</h5>
+              <p>Keep patients informed via SMS, WhatsApp, and calls.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <span class="icon">🩺</span>
+            <div>
+              <h5>Doctor AI Assistant</h5>
+              <p>Pre-brief doctors with summarized patient intake profiles.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <span class="icon">📈</span>
+            <div>
+              <h5>AI‑Powered Insights</h5>
+              <p>Analytics on patient volumes and operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column: Code Editor Mockup Window -->
+      <div class="about-illustration">
+        <div class="terminal-mockup config-terminal">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">agent_config.json</div>
+          </div>
+          <div class="terminal-body code-body">
+            <pre><code>{
+  <span class="key">"agent"</span>: <span class="string">"bolai"</span>,
+  <span class="key">"channels"</span>: [<span class="string">"voice"</span>, <span class="string">"whatsapp"</span>, <span class="string">"web"</span>],
+  <span class="key">"availability"</span>: <span class="string">"24/7"</span>,
+  <span class="key">"tasks"</span>: [
+    <span class="string">"book_appointment"</span>,
+    <span class="string">"send_reminders"</span>,
+    <span class="string">"brief_doctor"</span>
+  ],
+  <span class="comment">// redefining the clinic experience</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-header text-center">
+        <h2 class="section-title">Everything your clinic needs, automated</h2>
+        <p class="section-subtitle">Premium AI tools built specifically for modern healthcare practices.</p>
+      </div>
+      
+      <div class="grid feature-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card glass-card">
+          <div class="icon">⏱</div>
+          <h3>24/7 AI Appointment Booking</h3>
+          <p>Patients can book appointments anytime using natural conversations on WhatsApp, web, or mobile.</p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card glass-card">
+          <div class="icon">☎</div>
+          <h3>AI Receptionist</h3>
+          <p>Never miss a patient call. Our BolAi Agent answers questions instantly and professionally.</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-card glass-card">
+          <div class="icon">🗂</div>
+          <h3>Smart Patient Management</h3>
+          <p>Automatically organize healthcare records and operational workflows.</p>
+          <div class="feature-bullets">
+            <span class="bullet-item"><span class="check">✓</span> Patients</span>
+            <span class="bullet-item"><span class="check">✓</span> Follow-ups</span>
+            <span class="bullet-item"><span class="check">✓</span> Medical records</span>
+            <span class="bullet-item"><span class="check">✓</span> Appointment history</span>
+          </div>
+        </div>
+        
+        <!-- Feature 4 -->
+        <div class="feature-card glass-card">
+          <div class="icon">🔔</div>
+          <h3>Automated Patient Engagement</h3>
+          <p>Keep patients informed and connected through multi-channel outreach campaigns.</p>
+          <div class="feature-bullets">
+            <span class="bullet-item"><span class="check">✓</span> Appointment reminders</span>
+            <span class="bullet-item"><span class="check">✓</span> Health tips</span>
+            <span class="bullet-item"><span class="check">✓</span> New clinic services</span>
+            <span class="bullet-item"><span class="check">✓</span> Seasonal campaigns</span>
+          </div>
+        </div>
+        
+        <!-- Feature 5 -->
+        <div class="feature-card glass-card">
+          <div class="icon">🩺</div>
+          <h3>Doctor AI Assistant</h3>
+          <p>Every doctor gets a personal AI assistant delivering critical operational overviews.</p>
+          <div class="feature-bullets">
+            <span class="bullet-item"><span class="check">✓</span> Upcoming appointments</span>
+            <span class="bullet-item"><span class="check">✓</span> Daily schedule</span>
+            <span class="bullet-item"><span class="check">✓</span> Patient summaries</span>
+            <span class="bullet-item"><span class="check">✓</span> Priority alerts</span>
+          </div>
+        </div>
+        
+        <!-- Feature 6 -->
+        <div class="feature-card glass-card">
+          <div class="icon">📊</div>
+          <h3>AI Powered Insights</h3>
+          <p>Gain valuable clinic intelligence with dashboards built for efficiency and growth.</p>
+          <div class="feature-bullets">
+            <span class="bullet-item"><span class="check">✓</span> Patient growth</span>
+            <span class="bullet-item"><span class="check">✓</span> Appointment trends</span>
+            <span class="bullet-item"><span class="check">✓</span> Revenue opportunities</span>
+            <span class="bullet-item"><span class="check">✓</span> Staff efficiency</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="statistics" id="statistics">
+    <div class="container">
+      <h2 class="section-title">Our Impact</h2>
+      <div class="grid stats-grid">
+        <div class="stat-card">
+          <div class="counter" data-target="150">0</div>
+          <p>Projects Delivered</p>
+        </div>
+        <div class="stat-card">
+          <div class="counter" data-target="120">0</div>
+          <p>Clients Served</p>
+        </div>
+        <div class="stat-card">
+          <div class="counter" data-target="100">0</div>
+          <p>AI Solutions Built</p>
+        </div>
+        <div class="stat-card">
+          <div class="counter" data-target="90">0</div>
+          <p>% Reduction in Admin Work</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Patient contacts clinic</h3>
+          <p>Via web, phone, or messaging.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>BolAi responds instantly</h3>
+          <p>Confirms details and proposes slots.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Appointment booked</h3>
+          <p>Calendar entry created automatically.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Doctor receives briefing</h3>
+          <p>AI summarizes patient info.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Reminders sent</h3>
+          <p>Patient gets timely notifications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits" id="benefits">
+    <div class="container two-col">
+      <div class="benefit-card">
+        <h3>For Clinics</h3>
+        <ul>
+          <li>Reduce receptionist workload</li>
+          <li>Never miss appointments</li>
+          <li>Improve efficiency</li>
+          <li>Automate operations</li>
+          <li>Scale effortlessly</li>
+          <li>Increase patient satisfaction</li>
+        </ul>
+      </div>
+      <div class="benefit-card">
+        <h3>For Patients</h3>
+        <ul>
+          <li>Book anytime</li>
+          <li>Instant responses</li>
+          <li>Personalized reminders</li>
+          <li>Easy communication</li>
+          <li>Better healthcare experience</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Preview Section -->
+  <section class="dashboard" id="dashboard">
+    <div class="container">
+      <h2 class="section-title">Clinic Concierge Dashboard</h2>
+      <p class="section-subtitle">Real-time patient flow and AI agent activity at your fingertips.</p>
+      
+      <!-- Premium App Mockup Window -->
+      <div class="app-mockup glass-card">
+        <!-- Mockup Window Header -->
+        <div class="mockup-header">
+          <div class="window-buttons">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="window-title">CyfoSys Clinic Concierge - Dashboard</div>
+          <div class="window-status">
+            <span class="pulse-indicator"></span>
+            <span class="status-text">AI Receptionist Active</span>
+          </div>
+        </div>
+        
+        <!-- Mockup Grid Content -->
+        <div class="mockup-content">
+          <!-- Sidebar -->
+          <div class="mockup-sidebar">
+            <div class="sidebar-item active">
+              <span class="icon">📊</span> Overview
+            </div>
+            <div class="sidebar-item">
+              <span class="icon">📞</span> Live Calls
+            </div>
+            <div class="sidebar-item">
+              <span class="icon">🗓️</span> Calendar
+            </div>
+            <div class="sidebar-item">
+              <span class="icon">👤</span> Patient Logs
+            </div>
+            <div class="sidebar-item">
+              <span class="icon">⚙️</span> Settings
+            </div>
+          </div>
+          
+          <!-- Main Panel -->
+          <div class="mockup-main">
+            <!-- Top Widgets Grid -->
+            <div class="dashboard-grid">
+              <div class="widget-card">
+                <span class="widget-label">Today's Appointments</span>
+                <div class="widget-value">12 <span class="badge positive">+4 new</span></div>
+                <div class="widget-progress-bg"><div class="widget-progress-fill" style="width: 75%"></div></div>
+              </div>
+              <div class="widget-card">
+                <span class="widget-label">AI Call Triage Rate</span>
+                <div class="widget-value">94.8% <span class="badge positive">Optimal</span></div>
+                <div class="widget-progress-bg"><div class="widget-progress-fill" style="width: 94.8%"></div></div>
+              </div>
+              <div class="widget-card">
+                <span class="widget-label">Response Latency</span>
+                <div class="widget-value">1.2s <span class="badge warning">Excellent</span></div>
+                <div class="widget-progress-bg"><div class="widget-progress-fill" style="width: 85%"></div></div>
+              </div>
+            </div>
+            
+            <!-- Lower Mockup Sections -->
+            <div class="mockup-details">
+              <!-- Live Activity Feed -->
+              <div class="activity-feed">
+                <h5>Live Agent Interactions</h5>
+                <div class="feed-list">
+                  <div class="feed-item">
+                    <span class="time">09:41 AM</span>
+                    <span class="activity"><strong>AI Agent</strong> rescheduled Mrs. Gupta's appointment to tomorrow 3 PM.</span>
+                    <span class="status-badge resolved">Resolved</span>
+                  </div>
+                  <div class="feed-item">
+                    <span class="time">09:38 AM</span>
+                    <span class="activity"><strong>Incoming Call</strong> from Dr. Mehta's office. Query processed automatically.</span>
+                    <span class="status-badge resolved">Resolved</span>
+                  </div>
+                  <div class="feed-item">
+                    <span class="time">09:30 AM</span>
+                    <span class="activity"><strong>AI Agent</strong> sent automated WhatsApp pre-appointment brief to Mr. Iyer.</span>
+                    <span class="status-badge pending">Sent</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Patient Flow Mini-Chart -->
+              <div class="flow-chart-card">
+                <h5>Hourly Patient Flow</h5>
+                <div class="chart-bars">
+                  <div class="chart-bar-container"><div class="chart-bar" style="height: 40%"></div><span class="label">9 AM</span></div>
+                  <div class="chart-bar-container"><div class="chart-bar" style="height: 70%"></div><span class="label">10 AM</span></div>
+                  <div class="chart-bar-container"><div class="chart-bar" style="height: 85%"></div><span class="label">11 AM</span></div>
+                  <div class="chart-bar-container"><div class="chart-bar active" style="height: 95%"></div><span class="label">12 PM</span></div>
+                  <div class="chart-bar-container"><div class="chart-bar" style="height: 60%"></div><span class="label">1 PM</span></div>
+                  <div class="chart-bar-container"><div class="chart-bar" style="height: 50%"></div><span class="label">2 PM</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-card glass">
+          <p class="quote">“CyfoSys transformed our patient flow – the results speak for themselves.”</p>
+          <div class="author">
+            <img src="https://via.placeholder.com/60" alt="John Doe" class="author-img" />
+            <div>
+              <strong>John Doe</strong><br />
+              <span>CTO, TechNova</span>
+            </div>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
+        <div class="testimonial-card glass">
+          <p class="quote">“Their AI solutions cut our processing time by 40%.”</p>
+          <div class="author">
+            <img src="https://via.placeholder.com/60" alt="Jane Smith" class="author-img" />
+            <div>
+              <strong>Jane Smith</strong><br />
+              <span>Head of Innovation, FutureWorks</span>
+            </div>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <h2 class="cta-title">Ready to Redefine Your Clinic Experience?</h2>
+      <div class="cta-buttons">
+        <a href="#cta" class="btn btn-primary">Book a Demo</a>
+        <a href="#cta" class="btn btn-outline">Schedule a Meeting</a>
+      </div>
+      <canvas id="ctaCanvas" class="cta-canvas"></canvas>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container two-col">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: info@cyfosys.in</p>
+        <p>Phone: +91 12345 67890</p>
+        <p>Address: 123 AI Avenue, Bengaluru, India</p>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><svg width="24" height="24" fill="currentColor"><path d="M4 2C2.895 2 2 2.895 2 4v16c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2V4c0-1.105-0.895-2-2-2H4zm5.5 14h-3v-8h3v8zm-1.5-9.3c-0.966 0-1.75-0.784-1.75-1.75S6.534 4.2 7.5 4.2s1.75 0.784 1.75 1.75S8.466 7.7 7.5 7.7zm9.5 9.3h-3v-4c0-1-0.02-2.29-1.4-2.29-1.4 0-1.62 1.09-1.62 2.22v4.07h-3v-8h2.88v1.09h0.04c0.4-0.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v4.87z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="24" height="24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.36 8.59 8.59 0 01-2.71 1.03 4.26 4.26 0 00-7.27 3.88A12.09 12.09 0 013 4.79a4.26 4.26 0 001.32 5.68 4.18 4.18 0 01-1.93-.53v0.05c0 2.1 1.5 3.85 3.5 4.25a4.28 4.28 0 01-1.92.07c.54 1.68 2.1 2.9 3.95 2.94A8.55 8.55 0 012 19.54a12.07 12.07 0 006.54 1.92c7.84 0 12.13-6.5 12.13-12.13 0-.19-.01-.37-.02-.56A8.66 8.66 0 0024 4.56a8.4 8.4 0 01-2.54.7z"/></svg></a>
+        </div>
+      </div>
+      <div class="contact-form glass">
+        <h3>Get in Touch</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required />
+            <label for="name">Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>CyfoSys</h3>
+        <p>AI · Innovation · Solutions — Clinic Concierge</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><svg width="24" height="24" fill="currentColor"><path d="M4 2C2.895 2 2 2.895 2 4v16c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2V4c0-1.105-0.895-2-2-2H4zm5.5 14h-3v-8h3v8zm-1.5-9.3c-0.966 0-1.75-0.784-1.75-1.75S6.534 4.2 7.5 4.2s1.75 0.784 1.75 1.75S8.466 7.7 7.5 7.7zm9.5 9.3h-3v-4c0-1-0.02-2.29-1.4-2.29-1.4 0-1.62 1.09-1.62 2.22v4.07h-3v-8h2.88v1.09h0.04c0.4-0.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v4.87z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="24" height="24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.36 8.59 8.59 0 01-2.71 1.03 4.26 4.26 0 00-7.27 3.88A12.09 12.09 0 013 4.79a4.26 4.26 0 001.32 5.68 4.18 4.18 0 01-1.93-.53v0.05c0 2.1 1.5 3.85 3.5 4.25a4.28 4.28 0 01-1.92.07c.54 1.68 2.1 2.9 3.95 2.94A8.55 8.55 0 012 19.54a12.07 12.07 0 006.54 1.92c7.84 0 12.13-6.5 12.13-12.13 0-.19-.01-.37-.02-.56A8.66 8.66 0 0024 4.56a8.4 8.4 0 01-2.54.7z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CyfoSys. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
